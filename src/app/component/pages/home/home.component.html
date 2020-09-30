@@ -1,0 +1,46 @@
+<!-- Navbar -->
+<div class="navbar">
+    <ul class="navbar-nav">
+        <li class="navbar-item">
+            <img style="height: 60px;" src="assets/images/logo.png">
+        </li>
+    </ul>
+    <div class="dropdown navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn nav-right dropdown-toggle" type="button" 
+                data-toggle="dropdown" href="#">
+            <i class="fa fa-user-circle-o"></i>
+            <span>User Name</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a>Log out</a></li>
+        </ul>
+    </div>
+</div>
+<!-- End Navbar -->
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="sidebar-search">
+        <p>IP Ranger: </p>
+        <input type="text" [(ngModel)]="ipBegin" placeholder="192.168.0.">
+        <p>to</p>
+        <input type="text" [(ngModel)]="ipEnd" placeholder="192.168.0.">
+        <button (click)="getDevice()">Scan</button>
+    </div>
+    <div class="sidebar-list">
+        <div class="card" style="width: 100%;">
+            <div class="card-body" *ngFor = "let device of devices">
+                <h5 class="card-title">{{device?.name}}</h5>
+                <p class="card-text">IP Address: {{device?.ipAddress}}</p>
+                <p class="card-text">MAC Address: {{device?.macAddress}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-footer"></div>
+</div>
+<!-- End Sidebar -->
+
+<!-- Main Content -->
+<div class="main-content">
+</div>
+<!-- End Main Content -->

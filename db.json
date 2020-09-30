@@ -1,0 +1,14 @@
+{
+    "devices": [
+      { "name": "CAM-5546", "ipAddress": "192.168.0.1", "macAddress": "255.255.0.1" },
+      { "name": "CAM-7974", "ipAddress": "192.168.0.35", "macAddress": "255.255.0.2" },
+      { "name": "CAM-8984", "ipAddress": "192.168.0.40", "macAddress": "255.255.0.3" },
+      { "name": "CAM-5574", "ipAddress": "192.168.0.128", "macAddress": "255.255.0.4" },
+      { "name": "CAM-5464", "ipAddress": "192.168.0.135", "macAddress": "255.255.0.5" },
+      { "name": "CAM-4464", "ipAddress": "192.168.0.140", "macAddress": "255.255.0.6" },
+      { "name": "CAM-4464", "ipAddress": "192.168.0.155", "macAddress": "255.255.0.7" },
+      { "name": "CAM-4464", "ipAddress": "192.168.0.174", "macAddress": "255.255.0.8" },
+      { "name": "CAM-4464", "ipAddress": "192.168.0.180", "macAddress": "255.255.0.9" },
+      { "name": "CAM-4464", "ipAddress": "192.168.0.210", "macAddress": "255.255.0.10" }
+    ]
+  }

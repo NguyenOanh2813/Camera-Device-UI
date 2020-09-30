@@ -1,0 +1,131 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url(../../../../assets/fonts/Roboto-Regular.ttf);
+}
+
+.navbar{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    color: #000;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.dropdown span{
+    padding: 8px;
+}
+
+button.nav-right {
+    text-align: center;
+    height: 40px;
+    border: .5px solid #444;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:active{
+    border-color: #fff;
+}
+
+/* Side bar */
+
+.sidebar{
+    float: left;
+    width: 460px;
+    height: calc(100vh - 77px);
+    border-right: 1px solid #ccc;
+}
+
+.sidebar .sidebar-search{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar .sidebar-list{
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.sidebar .sidebar-footer{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar .sidebar-search button{
+    margin-left: 5px;
+    width: 45px;
+    height: 35px;
+    color: #fff;
+    background: #19d8b4;
+    border: 1px solid #19d8b4;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+}
+
+.sidebar input{
+    width: 150px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.sidebar p{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-list{
+    overflow: auto;
+}
+
+.sidebar-list .card .card-body:hover{
+    cursor: pointer;
+    background: #E3F2FD;
+}
+
+.sidebar-list .card .card-body:active::before{
+    background: #E3F2FD;
+}
+
+.card-body{
+    border: 1px solid #444;
+    height: 100px;
+    padding: 0;
+}
+
+.card-body h5{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.card-body p{
+    margin: 5px 0px 0px 5px;
+}
+
+/* Main content */
+.main-content{
+    width: calc(100% - 460px);
+    float: right;
+}
